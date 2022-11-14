@@ -1,13 +1,15 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../Home/Navbar'
+import "./HomeStyles.css";
 
 const Homep = () => {
   return (
     <>
-    <section>
-        {/* seccion nabvar */}
-        <Navbar/>
-    </section>
+    
+        <div className='home'>
+            <Navbar/>
+        </div>
+    
     </>
   )
 }
