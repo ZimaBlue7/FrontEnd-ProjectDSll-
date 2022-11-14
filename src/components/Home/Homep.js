@@ -8,8 +8,8 @@ const Homep = () => {
     
         <div className='home'>
             <Navbar/>
+            <p className='promo'>Promociones</p>
         </div>
-    
     </>
   )
 }
