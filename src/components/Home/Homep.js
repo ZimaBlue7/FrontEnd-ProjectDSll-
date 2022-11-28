@@ -6,10 +6,17 @@ const Homep = () => {
   return (
     <>
     
-        <div className='home'>
-            <Navbar/>
-            <p className='promo'>Promociones</p>
+      <section className='home'>
+        <Navbar/>
+         <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h3 class="animate-charcter"> Promociones</h3>
+            </div>
+          </div>
         </div>
+
+      </section>
     </>
   )
 }
