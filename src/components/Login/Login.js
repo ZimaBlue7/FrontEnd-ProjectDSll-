@@ -51,7 +51,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-yellow-400 to-stone-800 h-screen text-black flex  ">
+    <div className="bg-gradient-to-b from-yellow-400 to-stone-800 h-screen text-black flex ">
       <div className="w-full max-w-xs m-auto ">
         {error && <Alert message={error} />}
 
