@@ -1,7 +1,8 @@
 import React from 'react'
-import Navbar from '../Home/Navbar'
 import "./HomeStyles.css";
+import Navbar from '../Home/Navbar'
 import Carousel from './Carousel';
+import Cards from './Cards';
 
 const Homep = () => {
   return (
@@ -9,24 +10,25 @@ const Homep = () => {
     
       <section className='home'>
         <Navbar/>
-         <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3 class="animate-charcter"> Promociones</h3>
+         <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <h3 className="animate-charcter"> Promociones</h3>
             </div>
           </div>
         </div>
 
         <Carousel/>
         
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h3 class="animate-charcter"> Productos</h3>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 text-center">
+              <h3 className="animate-charcter2"> Productos</h3>
             </div>
           </div>
         </div>
 
+      {/* <Cards/> */}
 
       </section>
     </>
