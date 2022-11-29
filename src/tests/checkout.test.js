@@ -1,6 +1,6 @@
 import { amount } from "../components/Checkout/checkout";
 
-describe("Prueba lista de productos", () => {
+describe("Prueba lista de productos y sus precios", () => {
   test("Prueba suma de los precios", () => {
     let data = [
       {
