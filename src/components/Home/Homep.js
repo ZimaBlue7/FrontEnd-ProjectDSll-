@@ -2,9 +2,36 @@ import React from 'react'
 import "./HomeStyles.css";
 import Navbar from '../Home/Navbar'
 import Carousel from './Carousel';
-import Cards from './Cards';
+import Card from './Cards';
 
 const Homep = () => {
+
+  //Esta parte tiene que ser cambiada a la tabla de la base de datos
+  const cardsData = [
+    {
+      id: 1,
+      imageUrl: 'https://via.placeholder.com/300x200',
+      title: 'Card 1',
+      description: 'This is the first card.',
+    },
+    {
+      id: 2,
+      imageUrl: 'https://via.placeholder.com/300x200',
+      title: 'Card 2',
+      description: 'This is the second card.',
+    },
+    {
+      id: 3,
+      imageUrl: 'https://via.placeholder.com/300x200',
+      title: 'Card 3',
+      description: 'This is the third card.',
+    },
+  ];
+
+  const handleButtonClick = (cardId) => {
+    console.log(`Button clicked for card with id ${cardId}!`);
+  };
+
   return (
     <>
     
@@ -28,7 +55,18 @@ const Homep = () => {
           </div>
         </div>
 
-      {/* <Cards/> */}
+        <div className="card-container">
+      {cardsData.map(cardData => (
+        <Card
+          key={cardData.id}
+          imageUrl={cardData.imageUrl}
+          title={cardData.title}
+          description={cardData.description}
+          buttonText="Click me!"
+          onButtonClick={() => handleButtonClick(cardData.id)}
+        />
+      ))}
+    </div>
 
       </section>
     </>
