@@ -1,6 +1,19 @@
 import React from 'react'
+import InventarioStyles from './InventarioStyles'
 
-const Inventario = ({inventario, toogleImportance}) => {
+const Inventario = () => {
+  return (
+    <>
+    <section className='containerProdcutos'>
+      
+    </section>
+    </>
+  )
+}
+
+export default Inventario
+
+/* const Inventario = ({inventario, toogleImportance}) => {
     const label = inventario.important
         ? 'make not important'
         : 'make important';
@@ -17,4 +30,4 @@ const Inventario = ({inventario, toogleImportance}) => {
   )
 }
 
-export default Inventario
+export default Inventario */

@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import '@testing-library/jest-dom/extend-expect'
 import { render } from "@testing-library/react";
 import Inventario from "./Inventario";
@@ -14,4 +14,4 @@ test('renders contents', () => {
     view.getByText('this is a test')
 
     // view.debug() for the view of render
-})
+}) */
