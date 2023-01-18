@@ -74,3 +74,43 @@ const Homep = () => {
 }
 
 export default Homep
+
+
+/*
+se usa el hook `useEffect` para hacer una solicitud HTTP a la URL `https://your-backend.com/images/${props.imageId}` cada vez que la propiedad
+`imageId` cambia. La respuesta se espera en formato `blob` y 
+luego se crea una URL temporal para la imagen usando `URL.createObjectURL(new Blob([response.data]))`.
+
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
+import './Card.css';
+
+const Card = (props) => {
+  const [imageUrl, setImageUrl] = useState(null);
+
+  useEffect(() => {
+    axios.get(`https://your-backend.com/images/${props.imageId}`, {
+      responseType: 'blob'
+    })
+    .then(response => {
+      const imgUrl = URL.createObjectURL(new Blob([response.data]));
+      setImageUrl(imgUrl);
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  }, [props.imageId]);
+
+  return (
+    <div className="card">
+      {imageUrl && <img src={imageUrl} alt={props.title} className="card-image" />}
+      <div className="card-content">
+        <h3 className="card-title">{props.title } </h3>
+          <p className="card-description">{props.description}</p>
+            <button className="card-button" onClick={props.onButtonClick}>{props.buttonText}</button>
+      </div>
+    </div>
+  );
+}
+
+export default Card; */
