@@ -1,11 +1,12 @@
 import React from 'react'
-import InventarioStyles from './InventarioStyles'
+import './InventarioStyles'
+import Navbar from '../Home/Navbar'
 
 const Inventario = () => {
   return (
     <>
-    <section className='containerProdcutos'>
-      
+    <section className='containerProductos'>
+    <Navbar/>
     </section>
     </>
   )
