@@ -1,12 +1,16 @@
 import React from 'react'
-import './InventarioStyles'
+import './InventarioStyles.css'
 import Navbar from '../Home/Navbar'
 
 const Inventario = () => {
   return (
     <>
-    <section className='containerProductos'>
+    <section className='containerProductos'>  
     <Navbar/>
+
+    <div className='MotoBusqueda'>
+      <p>hola</p>
+    </div>
     </section>
     </>
   )

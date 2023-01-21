@@ -1,9 +1,8 @@
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
+.cardSeparada{
+  padding: 0 30px 0 30px;
+  
+}
 .card {
     width: 300px;
     height: 400px;

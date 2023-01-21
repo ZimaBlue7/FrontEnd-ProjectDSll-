@@ -8,6 +8,7 @@ import { AuthProvider } from "./context/authContext";
 //import Pago from "./components/Checkout/Pago";
 import Homep from "./components/Home/Homep";
 import PerfilP from "./components/Perfil/PerfilP";
+import Inventario from "./components/Productos/Inventario";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/Pago" element={<Pago />} />
           <Route path="/register" element={<Register />} />
           <Route path="/Perfil" element={<PerfilP/>} />
+          <Route path="/Productos" element={<Inventario/>} />
         </Routes>
       </AuthProvider>
     </div>

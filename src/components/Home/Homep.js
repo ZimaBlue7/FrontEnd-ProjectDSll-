@@ -36,7 +36,11 @@ const Homep = () => {
     <>
     
       <section className='home'>
+
+        <div className='NavbarHome'> 
         <Navbar/>
+        </div>
+
          <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -45,8 +49,10 @@ const Homep = () => {
           </div>
         </div>
 
+        <div className='carruselHome'> 
         <Carousel/>
-        
+        </div>
+
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -66,7 +72,7 @@ const Homep = () => {
           onButtonClick={() => handleButtonClick(cardData.id)}
         />
       ))}
-    </div>
+        </div>
 
       </section>
     </>
