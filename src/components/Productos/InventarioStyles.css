@@ -7,11 +7,40 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(222,224,84,1) 100
 }
 
 .MotoBusqueda{
-    border: 1px solid #000;
     position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 50px;
+    width: 180px;
+    height: 180px;
+    left: 40px;
     top: 200px;
     background-color: dimgray;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.words{
+    padding: 20px 0px 10px 0px;
+    color: aliceblue;
+}
+
+.busq{
+    padding: 20px 0px 10px 0px;
+    color: aliceblue;
+}
+
+.BusBusqueda{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 40px;
+    top: 415px;
+    background-color: dimgray;
+    border-radius: 13px;
+    text-align: center;
+}
+
+.futer{
+    position: absolute;
+    left: 25%;
+    top:750px;
+    height: 100%;
 }

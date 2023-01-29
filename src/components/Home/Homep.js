@@ -1,8 +1,9 @@
 import React from 'react'
-import "./HomeStyles.css";
-import Navbar from '../Home/Navbar'
-import Carousel from './Carousel';
-import Card from './Cards';
+import "../../Styles/HomeStyles.css";
+import Navbar from '../Compo/Navbar'
+import Carousel from '../Compo/Carousel';
+import Card from '../Compo/Cards';
+import Footeer from '../Compo/Footeer.js';
 
 const Homep = () => {
 
@@ -73,6 +74,8 @@ const Homep = () => {
         />
       ))}
         </div>
+
+        <Footeer/>
 
       </section>
     </>
