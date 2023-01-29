@@ -1,8 +1,9 @@
 import React from 'react'
-import "./HomeStyles.css";
-import Navbar from '../Home/Navbar'
-import Carousel from './Carousel';
-import Card from './Cards';
+import "../../Styles/HomeStyles.css";
+import Navbar from '../Compo/Navbar'
+import Carousel from '../Compo/Carousel';
+import Card from '../Compo/Cards';
+import Footeer from '../Compo/Footeer.js';
 
 const Homep = () => {
 
@@ -36,7 +37,11 @@ const Homep = () => {
     <>
     
       <section className='home'>
+
+        <div className='NavbarHome'> 
         <Navbar/>
+        </div>
+
          <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -45,8 +50,10 @@ const Homep = () => {
           </div>
         </div>
 
+        <div className='carruselHome'> 
         <Carousel/>
-        
+        </div>
+
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center">
@@ -66,7 +73,9 @@ const Homep = () => {
           onButtonClick={() => handleButtonClick(cardData.id)}
         />
       ))}
-    </div>
+        </div>
+
+        <Footeer/>
 
       </section>
     </>
