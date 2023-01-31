@@ -24,7 +24,7 @@ const Homep = () => {
     {
       id: 3,
       imageUrl: 'https://via.placeholder.com/300x200',
-      title: 'Metro 3mts',
+      title: 'Metro 3mts Gavilan',
       description: 'Cinta recubierta de nylon',
     },
   ];
