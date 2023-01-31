@@ -12,7 +12,6 @@ import Productos from "./components/Inventario/Productos";
 
 
 const App = () => {
-<<<<<<< HEAD
   return (
     <div>
       <AuthProvider>
@@ -36,31 +35,5 @@ const App = () => {
     </div>
   );
 };
-=======
-
-    return (
-      <div>
-        <AuthProvider>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                // <ProtectedRoutes>
-                <Homep />
-                //</ProtectedRoutes>
-              }
-            />
-            <Route path="*" element={<PagDefault />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/Pago" element={<Pago />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/Perfil" element={<PerfilP />} />
-          </Routes>
-        </AuthProvider>
-      </div>
-    );
-  }
-  
->>>>>>> 73b2a054c71f0bcc76a38858e2451690b8a24303
 
 export default App;
