@@ -9,6 +9,7 @@ import Homep from "./components/Home/Homep";
 import PerfilP from "./components/Perfil/PerfilP";
 import Inventario from "./components/Productos/Inventario";
 import PagDefault from "./components/Compo/PageDefault";
+import Productos from "./components/Inventario/Productos";
 
 const App = () => {
   return (
@@ -23,12 +24,13 @@ const App = () => {
               //</ProtectedRoutes>
             }
           />
+          <Route path="*" element={<PagDefault />} />
           <Route path="/login" element={<Login />} />
           <Route path="/Pago" element={<Pago />} />
           <Route path="/register" element={<Register />} />
           <Route path="/Perfil" element={<PerfilP />} />
           <Route path="/Productos" element={<Inventario />} />
-          <Route path="/PagDefault" element={<PagDefault />} />
+          <Route path="/Inventario" element={<Productos />} />
         </Routes>
       </AuthProvider>
     </div>
