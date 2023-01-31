@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Table, Button, Modal, Form } from "react-bootstrap";
 
+//inicio dashboard
 const Dashboard = () => {
   const [data, setData] = useState([]);
   const [showModal, setShowModal] = useState(false);
