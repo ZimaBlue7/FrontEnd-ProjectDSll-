@@ -1,5 +1,4 @@
 import { React, useState } from "react";
-import { useAuth } from "../../context/authContext";
 import { Link, useNavigate } from "react-router-dom";
 import Alert from "../Alert/Alert";
 
@@ -9,7 +8,7 @@ export const Login = () => {
     password: "",
   });
 
-  const { login, loginWithGoogle, resetPassword } = useAuth();
+  
   const navigate = useNavigate();
   const [error, setError] = useState();
 
@@ -17,20 +16,9 @@ export const Login = () => {
     setUser({ ...user, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
-    try {
-      await login(user.email, user.password);
-      navigate("/");
-    } catch (error) {
-      setError(error.message);
-    }
-  };
 
   const handleGoogleSignin = async () => {
     try {
-      await loginWithGoogle();
       navigate("/");
     } catch (error) {
       setError(error.message);
@@ -41,7 +29,6 @@ export const Login = () => {
     if (!user.email) return setError("Ingrese su correo");
 
     try {
-      await resetPassword(user.email);
       setError(
         "Hemos enviado un correo con un link para que reestablezcas tu contraseña"
       );
@@ -56,7 +43,6 @@ export const Login = () => {
         {error && <Alert message={error} />}
 
         <form
-          onSubmit={handleSubmit}
           className="bg-white shadow-md rounded-lg px-8 pt-6 pb-8 mb-4"
         >
           <div className="mb-4">

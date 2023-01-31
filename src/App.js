@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import { Login } from "./components/Login/Login";
 import { Register } from "./components/Register/Register";
 import Pago from "./components/Checkout/Pago";
-import { AuthProvider } from "./context/authContext";
 
 import Homep from "./components/Home/Homep";
 import PerfilP from "./components/Perfil/PerfilP";
@@ -13,7 +12,7 @@ import Productos from "./components/Inventario/Productos";
 const App = () => {
   return (
     <div>
-      <AuthProvider>
+      
         <Routes>
           <Route
             path="/"
@@ -30,7 +29,6 @@ const App = () => {
           <Route path="/Perfil" element={<PerfilP />} />
           <Route path="/Productos" element={<Productos />} />
         </Routes>
-      </AuthProvider>
     </div>
   );
 };
