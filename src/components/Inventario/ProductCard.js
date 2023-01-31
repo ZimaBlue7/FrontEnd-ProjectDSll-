@@ -16,16 +16,16 @@ function ProductCard(props) { // props.product is the product we are selling
                 { productQuantity > 0 ?
                     <>
                         <Form as={Row}>
-                            <Form.Label column="true" sm="6">In Cart: {productQuantity}</Form.Label>
+                            <Form.Label column="true" sm="6">En el carrito: {productQuantity}</Form.Label>
                             <Col sm="6">
-                                <Button sm="6" onClick={() => cart.addOneToCart(product.id)} className="mx-2">+</Button>
-                                <Button sm="6" onClick={() => cart.removeOneFromCart(product.id)} className="mx-2">-</Button>
+                                <Button variant="success" sm="5" onClick={() => cart.addOneToCart(product.id)} className="mx-1">+</Button>
+                                <Button variant="danger" sm="5" onClick={() => cart.removeOneFromCart(product.id)} className="mx-1">-</Button>
                             </Col>
                         </Form>
-                        <Button variant="danger" onClick={() => cart.deleteFromCart(product.id)} className="my-2">Remove from cart</Button>
+                        <Button variant="danger" onClick={() => cart.deleteFromCart(product.id)} className="my-2">Eliminar del carrito</Button>
                     </>
                     :
-                    <Button variant="primary" onClick={() => cart.addOneToCart(product.id)}>Add To Cart</Button>
+                    <Button variant="success" onClick={() => cart.addOneToCart(product.id)}>Añadir</Button>
                 }
             </Card.Body>
         </Card>

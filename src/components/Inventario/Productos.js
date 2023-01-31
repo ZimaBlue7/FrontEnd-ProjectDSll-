@@ -4,12 +4,13 @@ import NavbarComponent from "./Nabvar";
 import { Row, Col } from "react-bootstrap";
 import { productsArray } from "./productStore";
 import ProductCard from "./ProductCard";
-import "./InventarioStyles.css";
 
 import CartProvider from "./CartContext";
 import Footeer from "../Compo/Footeer";
 
-import "./InventarioStyles.css";
+import CategoriasNab from '../Compo/CategoriasNab'
+
+import "../../Styles/InventarioStyles.css";
 
 const Productos = () => {
   return (
@@ -22,7 +23,7 @@ const Productos = () => {
 
           
           <NavbarComponent  />
-          
+          <CategoriasNab/>
 
           <section className="busqueda">
             <div className="MotoBusqueda">
