@@ -51,7 +51,7 @@ export const Login = () => {
   };
 
   return (
-    <div className="bg-gradient-to-b from-yellow-400 to-stone-800 h-screen text-black flex ">
+    <div className="bg-gradient-to-b from-yellow-300 to-stone-100 h-screen text-black flex ">
       <div className="w-full max-w-xs m-auto ">
         {error && <Alert message={error} />}
 
@@ -95,7 +95,7 @@ export const Login = () => {
               className="inline-block align-baseline font-bold text-sm text-black-500 hover:text-black-800"
               onClick={handleResetPassword}
             >
-              ¿Olvidate tu contraseña?
+              ¿Olvidaste tu contraseña?
             </a>
           </div>
         </form>
@@ -104,12 +104,7 @@ export const Login = () => {
           ¿No tienes cuenta?<Link to="/register">Registrate</Link>
         </p>
 
-        <button
-          onClick={handleGoogleSignin}
-          className="bg-yellow-500  hover:bg-yellow-700 font-bold text-black shadow-md rounded-lg rounded-border-2  py-2 px-4 w-full"
-        >
-          Google
-        </button>
+        
       </div>
     </div>
   );
