@@ -8,7 +8,6 @@ import { AuthProvider } from "./context/authContext";
 import Homep from "./components/Home/Homep";
 import PerfilP from "./components/Perfil/PerfilP";
 import PagDefault from "./components/Compo/PageDefault";
-import Productos from "./components/Inventario/Productos";
 
 
 const App = () => {
@@ -30,7 +29,6 @@ const App = () => {
             <Route path="/Pago" element={<Pago />} />
             <Route path="/register" element={<Register />} />
             <Route path="/Perfil" element={<PerfilP />} />
-            <Route path="/Productos" element={<Productos />} />
           </Routes>
         </AuthProvider>
       </div>
