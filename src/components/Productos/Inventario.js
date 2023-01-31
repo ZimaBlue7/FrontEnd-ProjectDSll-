@@ -1,5 +1,5 @@
 import React from "react";
-import "./InventarioStyles.css";
+import "../Inventario/InventarioStyles.css";
 import Navbar from "../Compo/Navbar";
 import Footeer from "../Compo/Footeer";
 

@@ -1,8 +1,9 @@
-import {Button, Container, Navbar, Modal} from 'react-bootstrap';
+import {Button, Navbar, Modal} from 'react-bootstrap';
 import { useState, useContext } from 'react';
 import { CartContext } from "./CartContext";
 import CartProduct from './CartProduct';
 import Checkout from '../Checkout/checkout';
+import "./InventarioStyles.css";
 
 function NavbarComponent() {
     const cart = useContext(CartContext);
@@ -15,13 +16,16 @@ function NavbarComponent() {
 
     return (
         <>
-            <Navbar expand="sm">
+            <div className='nabvitar'>
+            <Navbar expand="sm" bg="dark">
                 <Navbar.Brand href="/">FerroElectricos</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Button onClick={handleShow}>Cart ({productsCount} Items)</Button>
                 </Navbar.Collapse>
             </Navbar>
+            </div>
+
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Shopping Cart</Modal.Title>

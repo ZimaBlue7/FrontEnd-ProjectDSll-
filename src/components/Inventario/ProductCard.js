@@ -8,8 +8,9 @@ function ProductCard(props) { // props.product is the product we are selling
     const productQuantity = cart.getProductQuantity(product.id);
     console.log(cart.items);
     return (
-        <Card>
+        <Card border="secondary " style={{ width: '18rem' }}>
             <Card.Body>
+                <Card.Img variant="top" src={product.img} />
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Text>${product.price}</Card.Text>
                 { productQuantity > 0 ?
