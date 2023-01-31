@@ -13,20 +13,23 @@ const Inventario = () => {
           <div className="MotoBusqueda">
             <p className="words">Motor de busqueda</p>
 
-           <p className="words"> Filtrar precio</p>
+            <p className="words"> Filtrar precio</p>
 
-           <p className="words">Mostrar mas opciones</p>
+            <p className="words">Mostrar mas opciones</p>
           </div>
 
           <div className="BusBusqueda">
-           <p className="busq">¿Buscas algo y no lo encuentras?</p>
+            <p className="busq">¿Buscas algo y no lo encuentras?</p>
           </div>
-
         </section>
 
-         <section className="futer">
-        <Footeer/>
+        <section className="tarjetas">
+          
         </section>
+
+        <div className="futersito">
+          <Footeer />
+        </div>
       </main>
     </>
   );
